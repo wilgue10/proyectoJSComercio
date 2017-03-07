@@ -4,10 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ClienteComponent } from './cliente/cliente.component';
+import { SugerenciaComponent } from './sugerencia/sugerencia.component';
+import { SuscripcionComponent } from './suscripcion/suscripcion.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClienteComponent,
+    SugerenciaComponent,
+    SuscripcionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
