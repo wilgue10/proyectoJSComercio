@@ -1,14 +1,14 @@
 import {ModuleWithProviders} from "@angular/core";
 import {Routes, RouterModule} from "@angular/router";
 import {HomeComponent} from "./home/home.component";
-import {HeroeComponent} from "./heroe/heroe.component";
-import {PoderComponent} from "./poder/poder.component";
+import {ClienteComponent} from "./cliente/cliente.component";
+import {SuscripcionComponent} from "./suscripcion/suscripcion.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'heroe', component: HeroeComponent},
-  {path: 'heroe/:idHeroe/poder', component: PoderComponent},
+  {path: 'cliente', component: ClienteComponent},
+  {path: 'cliente/:idCliente/suscripcion', component: SuscripcionComponent},
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
